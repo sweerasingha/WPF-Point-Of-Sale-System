@@ -53,6 +53,7 @@ namespace POS.ViewModels
         public ICommand GenerateReportCommand { get; }
         public ICommand ConfirmCancellationCommand { get; private set; }
         public ICommand LogOutCommand { get; }
+        public ICommand AddCustomerCommand { get; }
 
         public class RelayCommandWithParameter : ICommand
         {
@@ -93,6 +94,8 @@ namespace POS.ViewModels
             GenerateReportCommand = new RelayCommand(GenerateReport);
             LogOutCommand = new RelayCommand(LogOut);
 
+            AddCustomerCommand = new RelayCommand(AddCustomer);
+
             ConfirmCancellationCommand = new RelayCommand(ConfirmCancellation);
 
             LoadProducts();
@@ -108,6 +111,20 @@ namespace POS.ViewModels
             loginWindow.Show();
 
             currentWindow.Close();
+        }
+
+        private void AddCustomer()
+        {
+            var customerWindow = new CustomerWindow();
+            if (customerWindow.ShowDialog() == true)
+            {
+                using (var context = new POSDbContext())
+                {
+                    context.Customers.Add(customerWindow.Customer);
+                    context.SaveChanges();
+                }
+                LoadCustomers();
+            }
         }
 
         private void LoadProducts()

@@ -7,7 +7,7 @@
         Title="Normal User Main Window" 
         WindowStyle="None" 
         ResizeMode="NoResize"
-        WindowState="Maximized" Topmost="False" >
+        WindowState="Maximized" Topmost="False" Width="800" Height="800">
     <Grid>
 
         <Grid.Resources>
@@ -68,8 +68,9 @@
                         </DataGrid.Columns>
                     </DataGrid>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,20" HorizontalAlignment="Center" Grid.ColumnSpan="2">
-                        <Button Content="Add Sale" Command="{Binding AddSaleCommand}" Width="100" Style="{StaticResource save/cancel button}"/>
-                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="113"/>
+                        <Button Content="Add Sale" Command="{Binding AddSaleCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Add Customer" Command="{Binding AddCustomerCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
 
                     </StackPanel>
                 </Grid>
@@ -94,8 +95,9 @@
                         </DataGrid.Columns>
                     </DataGrid>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20">
-                        <Button Content="Generate Report" Command="{Binding GenerateReportCommand}"  Style="{StaticResource save/cancel button}" Width="103" />
-                        <Button Content="Cancel Sale" Command="{Binding ConfirmCancellationCommand}" Style="{StaticResource save/cancel button}" Width="100" />
+                        <Button Content="Generate Report" Command="{Binding GenerateReportCommand}"  Style="{StaticResource save/cancel button}" Width="150" />
+                        <Button Content="Cancel Sale" Command="{Binding ConfirmCancellationCommand}" Style="{StaticResource save/cancel button}" Width="150" />
+                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
