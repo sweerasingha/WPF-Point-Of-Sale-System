@@ -76,10 +76,10 @@
                     </ListView>
 
                     <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,20" HorizontalAlignment="Center" Grid.ColumnSpan="2">
-                        <Button Content="Add" Command="{Binding AddUserCommand}"  Style="{StaticResource save/cancel button}"/>
-                        <Button Content="Update" Command="{Binding UpdateUserCommand}"  Style="{StaticResource save/cancel button}"/>
-                        <Button Content="Delete" Command="{Binding DeleteUserCommand}" Style="{StaticResource save/cancel button}" />
-                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="113"/>
+                        <Button Content="Add" Command="{Binding AddUserCommand}"  Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Update" Command="{Binding UpdateUserCommand}"  Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Delete" Command="{Binding DeleteUserCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
@@ -104,10 +104,10 @@
                         </ListView.View>
                     </ListView>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,20" HorizontalAlignment="Center" >
-                        <Button Content="Add" Command="{Binding AddProductCommand}" Style="{StaticResource save/cancel button}"/>
-                        <Button Content="Update" Command="{Binding UpdateProductCommand}" Style="{StaticResource save/cancel button}"/>
-                        <Button Content="Delete" Command="{Binding DeleteProductCommand}" Style="{StaticResource save/cancel button}" />
-                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="113"/>
+                        <Button Content="Add" Command="{Binding AddProductCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Update" Command="{Binding UpdateProductCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Delete" Command="{Binding DeleteProductCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
@@ -131,10 +131,10 @@
                         </ListView.View>
                     </ListView>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20" >
-                        <Button Content="Add" Command="{Binding AddCustomerCommand}" Style="{StaticResource save/cancel button}"/>
-                        <Button Content="Update" Command="{Binding UpdateCustomerCommand}" Style="{StaticResource save/cancel button}"/>
-                        <Button Content="Delete" Command="{Binding DeleteCustomerCommand}" Style="{StaticResource save/cancel button}"/>
-                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="113"/>
+                        <Button Content="Add" Command="{Binding AddCustomerCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Update" Command="{Binding UpdateCustomerCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Delete" Command="{Binding DeleteCustomerCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
@@ -159,11 +159,11 @@
                     </DataGrid>
 
                     <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,20" HorizontalAlignment="Center">
-                        <Button Content="Add" Command="{Binding AddSaleCommand}" Style="{StaticResource save/cancel button}"/>
-                        <Button Content="View Details" Command="{Binding ViewSaleDetailsCommand}" Style="{StaticResource save/cancel button}" Width="97"/>
-                        <Button Content="Generate Report" Command="{Binding GenerateReportCommand}" Style="{StaticResource save/cancel button}" Width="113"/>
-                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="113"/>
-                        <Button Content="Cancel" Command="{Binding CancelSaleCommand}" Style="{StaticResource save/cancel button}" Width="113"/>
+                        <Button Content="Add" Command="{Binding AddSaleCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="View Details" Command="{Binding ViewSaleDetailsCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Generate Report" Command="{Binding GenerateReportCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Log Out" Command="{Binding LogOutCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
+                        <Button Content="Cancel" Command="{Binding CancelSaleCommand}" Style="{StaticResource save/cancel button}" Width="150"/>
                     </StackPanel>
                 </Grid>
             </TabItem>
