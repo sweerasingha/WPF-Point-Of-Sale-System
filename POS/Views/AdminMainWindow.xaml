@@ -126,7 +126,7 @@
                             <GridView>
                                 <GridViewColumn Header="Customer Name" DisplayMemberBinding="{Binding Name}" Width="200"/>
                                 <GridViewColumn Header="Phone Number" DisplayMemberBinding="{Binding PhoneNumber}" Width="180" HeaderStringFormat="" />
-                                <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" />
+                                <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" Width="Auto"/>
                             </GridView>
                         </ListView.View>
                     </ListView>

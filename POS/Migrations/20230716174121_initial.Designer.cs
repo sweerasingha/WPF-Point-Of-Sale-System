@@ -11,8 +11,8 @@ using POS.DataAccess;
 namespace POS.Migrations
 {
     [DbContext(typeof(POSDbContext))]
-    [Migration("20230409044423_Initial Migration")]
-    partial class InitialMigration
+    [Migration("20230716174121_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
