@@ -68,5 +68,10 @@ namespace POS.Views
             }
     
         }
+
+        private void Button_Click01(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -62,13 +62,14 @@
                                  Foreground="Lavender"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" 
-                            Width="122" 
-                            Height="54" 
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" 
                             Margin="10">
                     <Button Content="Confirm" 
                             Width="100" 
                             Style="{StaticResource save/cancel button}" Click="Button_Click"/>
+                    <Button Content="Cancel" 
+                            Width="100" 
+                            Style="{StaticResource save/cancel button}" Click="Button_Click01"/>
                 </StackPanel>
             </StackPanel>
         </Border>
