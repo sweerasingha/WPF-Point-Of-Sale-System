@@ -404,7 +404,9 @@ namespace POS.ViewModels
             DateTime reportMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
             DateTime nextMonth = reportMonth.AddMonths(1);
 
-            var monthlySales = Sales.Where(sale => sale.SaleDate >= reportMonth && sale.SaleDate < nextMonth).ToList();
+            var monthlySales = Sales
+                .Where(sale => !sale.IsCanceled && sale.SaleDate >= reportMonth && sale.SaleDate < nextMonth)
+                .ToList();
 
             decimal totalAmount = monthlySales.Sum(sale => sale.TotalAmount);
             int totalSales = monthlySales.Count;
