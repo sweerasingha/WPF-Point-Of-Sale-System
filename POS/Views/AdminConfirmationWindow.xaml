@@ -1,0 +1,76 @@
+﻿<Window x:Class="POS.Views.AdminConfirmationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POS.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="AdminConfirmationWindow"
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        ResizeMode="NoResize"
+        WindowState="Maximized" Topmost="True">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/img01.jpg"/>
+        </Grid.Background>
+
+        <Border Background="DarkRed" Opacity="0.8" CornerRadius="10">
+            <StackPanel HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Margin="10">
+                <Label Content="Authentication" 
+                       FontFamily="Matura MT Script Capitals" 
+                       Opacity ="0.9" 
+                       FontSize="48" 
+                       HorizontalAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="#FF750B0B" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+
+                <StackPanel Orientation="Horizontal" 
+                            Width="250" 
+                            Height="40" 
+                            Margin="10">
+                    <materialDesign:PackIcon Kind="User" 
+                                             Width="30" 
+                                             Height="30" 
+                                             Foreground="Lavender"/>
+                    <TextBox x:Name="UsernameTextBox" 
+                             Width="200" 
+                             Height="30" 
+                             Margin="10 0 10 10"
+                             materialDesign:HintAssist.Hint="AdminUsername" 
+                             Foreground="Lavender"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Width="250" Height="40" Margin="10">
+                    <materialDesign:PackIcon Kind="Lock" 
+                                             Width="30" 
+                                             Height="30" 
+                                             Foreground="Lavender"/>
+                    <PasswordBox x:Name="PasswordBox" 
+                                 Width="200" Height="30" 
+                                 Margin="10 0 10 10"
+                                 materialDesign:HintAssist.Hint="*************" 
+                                 Foreground="Lavender"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" 
+                            Width="122" 
+                            Height="54" 
+                            Margin="10">
+                    <Button Content="Confirm" 
+                            Width="100" 
+                            Style="{StaticResource save/cancel button}" Click="Button_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
